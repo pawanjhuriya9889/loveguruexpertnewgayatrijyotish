@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(180deg, #fff3d4, #f3c77a, #c78a2c) !important;
-    font-family: Arial, sans-serif;
+    /* font-family: 'Hind', sans-serif; */
+    font-family: 'Tiro Devanagari Hindi', serif;
+
 }
 
 .section {
@@ -145,6 +147,7 @@ h1, h2, h3 {
   background-attachment: fixed;
   padding: 15px 0;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Text Style */
@@ -234,7 +237,7 @@ body {
 
 .mantra {
     font-size: 14px;
-    color: #5b0000;
+    color: #ffffff;
 }
 
 .subtitle, .description {
@@ -444,10 +447,16 @@ body {
 /* Typewriter container */
 .typewriter {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: 'Playfair Display', serif;
-  color: #7a0000;
+  color: #5b0000; /* brighter red */
+  
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(159, 149, 149, 0.6),
+    0 0 20px rgba(235, 211, 211, 0.5);
 }
+
 
 /* Typed text */
 .typewriter::before {
