@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(-45deg, #0b0c2a, #1a1a40, #4b1e6b, #0b0c2a);
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    background-color: #b30000;
+    padding: 40px 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.green-bar {
+    background: #0a7d2e;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cta-btn {
+    background: #25D366;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.cta-btn:hover {
+    background: #1ebd5a;
+    color: #ffffff;
+}
+
+.card-custom {
+    background: #8b0000;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Banner */
+.banner-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    background: linear-gradient(-45deg, rgba(179,0,0,0.8), rgba(0,0,0,0.8), rgba(10,125,46,0.8));
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    padding: 40px;
+    border-radius: 20px;
+    color: #ffffff;
+    max-width: 900px;
+    text-align: center;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text animation */
+.animate-text {
+    opacity: 0;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.6s; }
+.delay-2 { animation-delay: 1.2s; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fixed Buttons */
+.fixed-btn {
+    position: fixed;
+    bottom: 15px;
+    z-index: 9999;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.left-btn { left: 15px; background: #0d6efd; }
+.right-btn { right: 15px; background: #25D366; }
+
+
+
+.imgheig{
+    height: 269px;
+    width: 290px !important;
+}
+
+
+.card-custom p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-custom strong {
+    display: block;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+
+.card-custom:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
